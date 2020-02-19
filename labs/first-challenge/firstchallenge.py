@@ -13,4 +13,4 @@ def longestSubstring (string):
             result = counter
     return result
 
-
+print(longestSubstring("pwwkew"))

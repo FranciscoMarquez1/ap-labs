@@ -38,20 +38,21 @@ Build Requirements
 ```
 # Build Requirements here
 ```
-
+Python3
 
 How to build
 ------------
 ```
 # instructions here
 ```
-
+No need to build in python
 
 How to Run
 ----------
 ```
 # instructions here
 ```
+Python3 firstchallenge.py
 
 
 General instructions
