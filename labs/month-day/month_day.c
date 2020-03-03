@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
     int month;
     int day;
     month_day(atoi(argv[1]), atoi(argv[2]), &month, &day);
-    printf("Month: %s, day: %d\n", names[month], day);
+    printf("%s %d, %d\n", names[month], day, atoi(argv[1]));
     return 0;
 }
 
