@@ -25,7 +25,7 @@ func scanDir(dir string) error {
 
     err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
-			fmt.Printf("Error [%v] en directorio [%q]\n", err, path)
+			fmt.Printf("Error [%v] en path [%q]\n", err, path)
 			os.Exit(2)
 		}
 		Mode := info.Mode()
