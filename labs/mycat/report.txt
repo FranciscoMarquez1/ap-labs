@@ -1,0 +1,11 @@
+In a file with 2942 lines the time of cat was:
+real    0m0.940s
+user    0m0.000s
+sys     0m0.021s
+
+and the time of mycat was: 
+real    0m0.580s
+user    0m0.000s
+sys     0m0.018s
+
+Mine is faster
