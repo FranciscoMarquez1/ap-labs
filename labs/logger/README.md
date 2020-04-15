@@ -32,3 +32,12 @@ How to submit your work
 GITHUB_USER=<your_github_user>  make submit
 ```
 More details at: [Classify API](../../classify.md)
+
+How to run
+=======================
+```
+gcc -c testLogger.c -o testLogger.o
+gcc -c logger.c -o logger.o
+gcc testLogger.o logger.o -o main.o
+./main.o
+```
