@@ -4,21 +4,22 @@
 int main(){
 
     // default logging
-    infof("INFO Message %d", 1);
-    warnf("WARN Message %d", 2);
-    errorf("ERROR Message %d", 2);
+    infof("INFOF Test %d\n", 10);
+    warnf("WARNF Test %s\n", "perro");
+    errorf("ERRORF Test %s\n", "gato");
 
     // stdout logging
     initLogger("stdout");
-    infof("INFO Message %d", 1);
-    warnf("WARN Message %d", 2);
-    errorf("ERROR Message %d", 2);
+    infof("INFOF Test %d\n", 10);
+    warnf("WARNF Test %s\n", "perro");
+    errorf("ERRORF Test %s\n", "gato");
 
     // syslog logging
     initLogger("syslog");
-    infof("INFO Message %d", 1);
-    warnf("WARN Message %d", 2);
-    errorf("ERROR Message %d", 2);
+    infof("INFOF Test %d\n", 10);
+    warnf("WARNF Test %s\n", "perro");
+    errorf("ERRORF Test %s\n", "gato");
+    
 
     return 0;
 }
