@@ -11,14 +11,26 @@ import (
 	"log"
 	"net"
 	"os"
+	"flag"
+	"fmt"
 )
 
 //!+
 func main() {
-	conn, err := net.Dial("tcp", "localhost:8000")
+	username := flag.String("user", "____", "a string")
+	server := flag.String("server", "localhost:8000", "a string")
+	flag.Parse()
+
+	if *username == "____" {
+		log.Fatal("Must provide a username\n")
+	}
+
+	conn, err := net.Dial("tcp", *server)
+	// conn.Write([]byte(user))
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Fprintf(conn, *username+"\n")
 	done := make(chan struct{})
 	go func() {
 		io.Copy(os.Stdout, conn) // NOTE: ignoring errors
