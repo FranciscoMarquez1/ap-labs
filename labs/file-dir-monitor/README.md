@@ -47,3 +47,12 @@ GITHUB_USER=<your_github_user> make check-submission
 ```
 
 More details about Classify API : [Classify](../../classify.md)
+
+How to run
+=================================================
+```
+gcc -c monitor.c -o monitor.o
+gcc -c logger.c -o logger.o
+gcc monitor.o logger.o -o monitor
+./monitor
+```
